@@ -5,6 +5,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
 import { redirect } from "next/navigation";
 
+// edit
 // SSR로 렌더링된다. 사용자에게 요청이 올때마다 페이지를 만든다
 export default async function HomePage() {
   const session = await getServerSession(authOptions);
